@@ -5,11 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css"
+  <script>
+    function onImg()
+    {
+      this.setAttribute("src","C:\gittest\Meisterwerk2.jpg");
+    }
+    function outImg()
+    {
+      this.setAttribute("src","C:\gittest\Meisterwerk.jpg");
+    }
+  <link> rel="stylesheet" href="styles.css"</link>
+  </script>
 </head>
 <body>
-  <h1>git demo page</h1>
-  <script src="app.js"></script> 
-  <img src="Meisterwerk.png">
+    <center>  
+    <h1>Magic Image</h1>
+    <h2>don't touch it</h2>
+    <hr/>
+    <button type="button">
+    <script src="app.js"></script> 
+    <img src="C:\gittest\Meisterwerk.jpg" height="100px" width="100px" onmouseover="onImg.call(this)"
+    onmouseout="outImg.call(this)"/>
+    </button>
+    </center>
+
 </body>
 </html>
