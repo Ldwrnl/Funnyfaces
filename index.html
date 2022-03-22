@@ -5,11 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css"
+  <style type="text/css">
+    body{
+      padding: 0;
+      margin: 20px auto;
+      text-align: center;
+    }
+  </style>
+  
 </head>
 <body>
-  <h1>git demo page</h1>
-  <script src="app.js"></script> 
-  <img src="Meisterwerk.png">
+
+    <h1>Magic Image</h1>
+    <h2>don't touch it</h2>
+    <img src="Meisterwerk.jpg" height="100px" width="100px" 
+    onmouseover="this.src='Meisterwerk2.jpg'"
+    onmouseout="this.src='Meisterwerk.jpg'"
+    />
+
+
 </body>
 </html>
